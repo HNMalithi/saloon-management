@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 24, 2019, 12:26:47 PM
+    Author     : User
+*/
+
+.NavClickClr{
+    -fx-background-color: #b30059;
+}
+
+.NavButtonMy{
+    -fx-background-color: #660033;
+}
+
+.NavButtonMy:hover{
+    -fx-background-color: #b30059;
+}
+
+.pnlBackgroundColor{
+    -fx-background-color: #ffffff;
+}
+
+.AddBtnColor{
+    -fx-background-color: #008000;
+}
+
+.UpdateBtnColor{
+    -fx-background-color: #001a66;
+}
+
+.DeleteBtnColor{
+    -fx-background-color: #cc0000;
+}
+
+.stage-rounded{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgb(143, 145, 138), 15, 0, 0, 0);
+}
+
+.HomeNavBtn{
+    -fx-background-color:  #660033;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.text-field:focused{
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: #660033;
+    /*-fx-focus-color: #4d0026;*/
+}

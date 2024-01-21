@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="948.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <AnchorPane prefHeight="54.0" prefWidth="948.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton fx:id="btnSellHome" focusTraversable="false" layoutX="164.0" layoutY="7.0" onMouseClicked="#OnClickedHomeSellBtn" prefHeight="37.0" prefWidth="147.0" styleClass="HomeNavBtn" stylesheets="@../css/styles.css" text="Sell Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnHomeRent" focusTraversable="false" layoutX="322.0" layoutY="7.0" onMouseClicked="#OnClickedHomeRentBtn" prefHeight="37.0" prefWidth="147.0" styleClass="HomeNavBtn" stylesheets="@../css/styles.css" text="Rent Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnHomeAppoinment" focusTraversable="false" layoutX="480.0" layoutY="7.0" onMouseClicked="#OnClickedHomeAppoinmentBtn" prefHeight="37.0" prefWidth="147.0" styleClass="HomeNavBtn" stylesheets="@../css/styles.css" text="Appoinment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnPackages" focusTraversable="false" layoutX="796.0" layoutY="7.0" onMouseClicked="#OnClickedPackagesBtn" prefHeight="37.0" prefWidth="147.0" styleClass="HomeNavBtn" stylesheets="@../css/styles.css" text="Packages" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAllRents" focusTraversable="false" layoutX="638.0" layoutY="7.0" onMouseClicked="#OnClickedHomeRentAllBtn" prefHeight="37.0" prefWidth="147.0" styleClass="HomeNavBtn" stylesheets="@../css/styles.css" text="All Rents" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnServiceHome" focusTraversable="false" layoutX="6.0" layoutY="7.0" onMouseClicked="#OnClickedHomeServiceBtn" prefHeight="37.0" prefWidth="147.0" styleClass="HomeNavBtn" stylesheets="@../css/styles.css" text="Service" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlHomeMiddle" layoutX="3.0" layoutY="58.0" prefHeight="553.0" prefWidth="939.0" />
+   </children>
+</AnchorPane>

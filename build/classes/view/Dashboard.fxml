@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="702.0" prefWidth="1190.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="702.0" prefWidth="235.0" style="-fx-background-color: #660033;">
+         <children>
+            <VBox layoutX="-1.0" layoutY="245.0" prefHeight="512.0" prefWidth="238.0">
+               <children>
+                  <AnchorPane fx:id="btnHome" onMouseClicked="#OnClickedHome" prefHeight="54.0" prefWidth="190.0" stylesheets="@../css/styles.css">
+                     <children>
+                        <Label layoutX="73.0" layoutY="15.0" prefHeight="26.0" prefWidth="125.0" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/icons8_home_32px_11.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="NavButtonMy" />
+                        <String fx:value="NavClickClr" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnSellsStock" onMouseClicked="#OnClickedSellsStock" prefHeight="54.0" prefWidth="190.0" styleClass="NavButtonMy" stylesheets="@../css/styles.css">
+                     <children>
+                        <Label layoutX="72.0" layoutY="15.0" prefHeight="26.0" prefWidth="125.0" text="Sells Stock" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="26.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/icons8_move_stock_32px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnRent" onMouseClicked="#OnCilckRent" prefHeight="54.0" prefWidth="190.0" styleClass="NavButtonMy" stylesheets="@../css/styles.css">
+                     <children>
+                        <Label layoutX="73.0" layoutY="15.0" prefHeight="26.0" prefWidth="125.0" text="Rent Stock" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/icons8_calendar_32px_2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnEmployees" onMouseClicked="#OnClickEmployees" prefHeight="54.0" prefWidth="190.0" styleClass="NavButtonMy" stylesheets="@../css/styles.css">
+                     <children>
+                        <Label layoutX="72.0" layoutY="15.0" prefHeight="26.0" prefWidth="125.0" text="Packages" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="26.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/icons8_id_card_32px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnReports" onMouseClicked="#OnClickedReports" prefHeight="54.0" prefWidth="190.0" styleClass="NavButtonMy" stylesheets="@../css/styles.css">
+                     <children>
+                        <Label layoutX="72.0" layoutY="15.0" prefHeight="26.0" prefWidth="125.0" text="Charts" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="26.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icon/icons8_report_card_32px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <ImageView fitHeight="228.0" fitWidth="238.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/SallonBastaLogo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="234.0" prefHeight="79.0" prefWidth="956.0" style="-fx-background-color: #660033;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="889.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icons8_group_background_selected_32px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblTime" layoutX="2.0" layoutY="50.0" prefHeight="27.0" prefWidth="136.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFirstName" alignment="CENTER_RIGHT" layoutX="687.0" layoutY="2.0" prefHeight="25.0" prefWidth="178.0" text="FirstName" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnNewUser" focusTraversable="false" layoutX="872.0" layoutY="48.0" onMouseClicked="#OnClickedNewUser" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #e68a00;" text="New User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblUserType" alignment="CENTER_RIGHT" layoutX="687.0" layoutY="24.0" prefHeight="25.0" prefWidth="178.0" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnLogout" focusTraversable="false" layoutX="794.0" layoutY="48.0" onMouseClicked="#OnClickedLogout" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #e68a00;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlMiddle" layoutX="237.0" layoutY="79.0" prefHeight="617.0" prefWidth="948.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

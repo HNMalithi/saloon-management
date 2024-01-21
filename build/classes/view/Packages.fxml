@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="948.0" style="-fx-border-image-width: 20;" styleClass="pnlBackgroundColor" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PackagesController">
+   <children>
+      <TableView fx:id="tblPackages" layoutX="41.0" layoutY="237.0" prefHeight="305.0" prefWidth="875.0">
+        <columns>
+          <TableColumn editable="false" prefWidth="137.0" text="Package ID" />
+          <TableColumn editable="false" prefWidth="186.0" text="Package Name" />
+            <TableColumn editable="false" prefWidth="426.0" text="Package Description" />
+            <TableColumn editable="false" prefWidth="124.0" text="Package Price" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="txtPackageID" editable="false" layoutX="41.0" layoutY="23.0" prefHeight="30.0" prefWidth="174.0" promptText="Package ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPackageName" layoutX="237.0" layoutY="23.0" prefHeight="30.0" prefWidth="438.0" promptText="Package Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPackagePrice" layoutX="702.0" layoutY="23.0" prefHeight="30.0" prefWidth="216.0" promptText="Package Price">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="txtPackageDescription" layoutX="237.0" layoutY="71.0" prefHeight="101.0" prefWidth="679.0" promptText="Package Description">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextArea>
+      <JFXButton fx:id="btnAdd" layoutX="802.0" layoutY="185.0" onMouseClicked="#OnClickedAdd" prefHeight="37.0" prefWidth="114.0" styleClass="AddBtnColor" stylesheets="@../css/styles.css" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="40.0" layoutY="557.0" onMouseClicked="#OnClickedDelete" prefHeight="37.0" prefWidth="114.0" styleClass="DeleteBtnColor" stylesheets="@../css/styles.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="662.0" layoutY="185.0" onMouseClicked="#OnClickedUpdate" prefHeight="37.0" prefWidth="114.0" stylesheets="@../css/styles.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="UpdateBtnColor" />
+            <String fx:value="AddBtnColor" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</AnchorPane>
